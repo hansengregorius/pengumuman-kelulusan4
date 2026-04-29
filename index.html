@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pengumuman Kelulusan | SMA IPEKA Balikpapan</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -15,8 +15,9 @@
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['Lora', 'serif'], 
-                        serif: ['Playfair Display', 'serif'], 
+                        sans: ['Montserrat', 'sans-serif'], 
+                        serif: ['Lora', 'serif'], 
+                        display: ['Playfair Display', 'serif'], 
                     },
                     colors: {
                         maroon: {
@@ -85,18 +86,18 @@
                     </div>
                     
                     <div>
-                        <h1 class="font-serif font-bold text-maroon-900 text-xl tracking-wide uppercase">SMA IPEKA</h1>
-                        <p class="text-xs text-gold-600 font-medium tracking-[0.2em] uppercase mt-0.5">Balikpapan</p>
+                        <h1 class="font-display font-bold text-maroon-900 text-xl tracking-wide uppercase">SMAK IPEKA</h1>
+                        <p class="text-xs text-gold-600 font-semibold tracking-[0.2em] uppercase mt-0.5">Balikpapan</p>
                     </div>
                 </div>
                 
                 <div class="hidden md:flex space-x-10" data-aos="fade-down" data-aos-duration="800" data-aos-delay="200" id="nav-links">
-                    <a href="#beranda" class="nav-item-home text-maroon-800 hover:text-gold-500 text-sm font-medium tracking-widest uppercase transition transform hover:-translate-y-0.5 inline-block">Beranda</a>
-                    <a href="#cek-kelulusan" class="nav-item-home text-maroon-800 hover:text-gold-500 text-sm font-medium tracking-widest uppercase transition transform hover:-translate-y-0.5 inline-block">Cek Kelulusan</a>
+                    <a href="#beranda" class="nav-item-home text-maroon-800 hover:text-gold-500 text-sm font-semibold tracking-widest uppercase transition transform hover:-translate-y-0.5 inline-block">Beranda</a>
+                    <a href="#cek-kelulusan" class="nav-item-home text-maroon-800 hover:text-gold-500 text-sm font-semibold tracking-widest uppercase transition transform hover:-translate-y-0.5 inline-block">Cek Kelulusan</a>
                     
-                    <a href="#" onclick="kembaliKeHome(event)" class="nav-item-student hidden text-slate-500 hover:text-maroon-900 text-sm font-medium tracking-widest uppercase transition transform hover:-translate-y-0.5 inline-block"><i class="fa-solid fa-arrow-left mr-1"></i> Cek NISN Lain</a>
-                    <a href="#sambutan" class="nav-item-student hidden text-maroon-800 hover:text-gold-500 text-sm font-medium tracking-widest uppercase transition transform hover:-translate-y-0.5 inline-block">Sambutan</a>
-                    <a href="#info" class="nav-item-student hidden text-maroon-800 hover:text-gold-500 text-sm font-medium tracking-widest uppercase transition transform hover:-translate-y-0.5 inline-block">Info Acara</a>
+                    <a href="#" onclick="kembaliKeHome(event)" class="nav-item-student hidden text-slate-600 hover:text-maroon-900 text-sm font-semibold tracking-widest uppercase transition transform hover:-translate-y-0.5 inline-block"><i class="fa-solid fa-arrow-left mr-1"></i> Cek NISN Lain</a>
+                    <a href="#sambutan" class="nav-item-student hidden text-maroon-800 hover:text-gold-500 text-sm font-semibold tracking-widest uppercase transition transform hover:-translate-y-0.5 inline-block">Sambutan</a>
+                    <a href="#info" class="nav-item-student hidden text-maroon-800 hover:text-gold-500 text-sm font-semibold tracking-widest uppercase transition transform hover:-translate-y-0.5 inline-block">Info Acara</a>
                 </div>
             </div>
         </div>
@@ -109,19 +110,19 @@
                 <div class="inline-block mb-8" data-aos="zoom-in" data-aos-duration="1000">
                     <div class="classic-border">
                         <div class="classic-border-inner py-1.5 px-6 bg-maroon-900/50 backdrop-blur-sm">
-                            <span class="text-gold-400 text-xs font-semibold tracking-[0.3em] uppercase">Angkatan 2026</span>
+                            <span class="text-gold-400 text-sm font-semibold tracking-[0.3em] uppercase">Angkatan 2026</span>
                         </div>
                     </div>
                 </div>
 
-                <h1 class="font-serif text-5xl md:text-7xl font-bold text-ivory mb-6 leading-tight tracking-wide" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+                <h1 class="font-display text-5xl md:text-7xl font-bold text-ivory mb-6 leading-tight tracking-wide" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
                     Pengumuman Kelulusan <br>
-                    <span class="text-gold-400 italic font-normal text-4xl md:text-6xl mt-4 inline-block">Siswa Kelas XII</span>
+                    <span class="text-gold-400 font-serif italic font-medium text-4xl md:text-6xl mt-4 inline-block">Siswa Kelas XII</span>
                 </h1>
                 
                 <div class="w-24 h-px bg-gold-400 mx-auto mb-8" data-aos="fade-in" data-aos-delay="400"></div>
                 
-                <p class="text-ivory-100 text-lg md:text-xl max-w-2xl mx-auto mb-14 font-light italic leading-relaxed" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                <p class="text-ivory text-lg md:text-xl max-w-2xl mx-auto mb-14 font-serif font-medium leading-relaxed" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
                     Amsal 23:18: <br> "Karena masa depan sungguh ada, dan harapanmu tidak akan hilang."
                 </p>
 
@@ -145,26 +146,26 @@
                             <i class="fa-solid fa-magnifying-glass text-2xl"></i>
                         </div>
 
-                        <h2 class="font-serif text-3xl md:text-4xl font-bold text-maroon-900 mb-4" data-aos="fade-up" data-aos-delay="300">Pencarian Status Kelulusan</h2>
+                        <h2 class="font-display text-3xl md:text-4xl font-bold text-maroon-900 mb-4" data-aos="fade-up" data-aos-delay="300">Pencarian Status Kelulusan</h2>
                         <div class="w-12 h-px bg-gold-400 mx-auto mb-6" data-aos="fade-in" data-aos-delay="400"></div>
-                        <p class="text-slate-600 mb-10 leading-relaxed font-serif italic" data-aos="fade-up" data-aos-delay="400">Silakan masukkan <b>Nomor Induk Siswa (NIS)</b> atau <b>NISN</b> Anda ke dalam kolom yang tersedia di bawah ini untuk melihat hasil keputusan kelulusan.</p>
+                        <p class="text-slate-800 text-base md:text-lg font-serif font-medium mb-10 leading-relaxed" data-aos="fade-up" data-aos-delay="400">Silakan masukkan <b>Nomor Induk Siswa (NIS)</b> atau <b>NISN</b> Anda ke dalam kolom yang tersedia di bawah ini untuk melihat hasil keputusan kelulusan.</p>
 
                         <form id="formCek" class="max-w-md mx-auto" onsubmit="event.preventDefault(); cekKelulusan();" data-aos="fade-up" data-aos-delay="500">
                             <div class="mb-4 relative group">
-                                <input type="text" id="searchIdInput" class="w-full px-6 py-4 bg-transparent border-b-2 border-maroon-900/30 focus:outline-none focus:border-gold-500 text-center text-xl font-serif text-maroon-900 placeholder-slate-400 transition-colors duration-300" placeholder="Menyiapkan koneksi..." required disabled>
+                                <input type="text" id="searchIdInput" class="w-full px-6 py-4 bg-transparent border-b-2 border-maroon-900/30 focus:outline-none focus:border-gold-500 text-center text-xl md:text-2xl font-sans font-bold text-maroon-900 placeholder-slate-400 transition-colors duration-300" placeholder="Menyiapkan koneksi..." required disabled>
                                 <div class="absolute bottom-0 left-0 w-0 h-0.5 bg-gold-500 transition-all duration-500 group-focus-within:w-full"></div>
                             </div>
                             
-                            <div id="errorMsg" class="hidden mb-6 text-red-600 text-sm font-sans px-4 py-2 bg-red-50 border border-red-200 rounded animate-pulse">
+                            <div id="errorMsg" class="hidden mb-6 text-red-600 text-sm font-sans font-medium px-4 py-2 bg-red-50 border border-red-200 rounded animate-pulse">
                                 <i class="fa-solid fa-circle-exclamation mr-1"></i> Data tidak ditemukan. Pastikan NIS/NISN sudah benar.
                             </div>
 
-                            <button type="submit" id="btnSubmitCek" class="w-full bg-maroon-900 hover:bg-maroon-800 text-gold-400 font-bold py-4 px-6 shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1 uppercase tracking-widest text-sm border border-maroon-900 overflow-hidden relative group opacity-50 cursor-not-allowed" disabled>
+                            <button type="submit" id="btnSubmitCek" class="w-full bg-maroon-900 hover:bg-maroon-800 text-gold-400 font-bold py-4 px-6 shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1 uppercase tracking-wider text-sm border border-maroon-900 overflow-hidden relative group opacity-50 cursor-not-allowed" disabled>
                                 <span class="relative z-10" id="btnTextCek">Memuat Koneksi...</span>
                                 <div class="absolute inset-0 bg-gold-600/20 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out"></div>
                             </button>
                             
-                            <p class="text-xs text-center text-slate-500 mt-6 font-serif italic opacity-70 hover:opacity-100 transition-opacity">*Pastikan NIS atau NISN dimasukkan dengan benar tanpa spasi.</p>
+                            <p class="text-sm text-center text-slate-600 mt-6 font-serif italic">*Pastikan NIS atau NISN dimasukkan dengan benar tanpa spasi.</p>
                         </form>
 
                     </div>
@@ -182,25 +183,29 @@
                             <div class="absolute -bottom-4 -right-4 w-24 h-24 border-b-2 border-r-2 border-gold-400 -z-10 transition-transform duration-500 group-hover:translate-x-2 group-hover:translate-y-2"></div>
                             
                             <div class="overflow-hidden">
-                                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Kepala Sekolah" class="w-full object-cover h-[500px] grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700">
+                                <img src="https://i.postimg.cc/gJsQFSW0/Etti-Hartiwi-(Kepala-Sekolah)-(2000-x-2000-px).png" alt="Kepala Sekolah" class="w-full object-cover h-[500px] grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700">
                             </div>
                         </div>
                     </div>
                     <div class="w-full md:w-7/12" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
                         <h4 class="text-gold-600 font-bold tracking-widest uppercase text-sm mb-2">Pesan & Harapan</h4>
-                        <h2 class="font-serif text-4xl font-bold text-maroon-900 mb-6">Sambutan Kepala Sekolah</h2>
+                        <h2 class="font-display text-4xl font-bold text-maroon-900 mb-6">Sambutan Kepala Sekolah</h2>
                         <div class="w-16 h-px bg-gold-400 mb-8" data-aos="fade-right" data-aos-delay="400"></div>
                         
                         <div class="relative" data-aos="fade-up" data-aos-delay="500">
                             <i class="fa-solid fa-quote-left text-6xl text-gold-400/20 absolute -top-4 -left-6 transform transition-transform hover:-translate-y-2 hover:-rotate-12 duration-300"></i>
-                            <blockquote class="font-serif text-xl text-slate-700 italic mb-8 leading-loose relative z-10 pl-4 border-l-2 border-gold-400">
-                                "Selamat atas pencapaian luar biasa anak-anakku yang terkasih. Masa seragam putih abu-abu telah usai, namun buku perjalanan hidup kalian baru saja membuka halaman baru. Teruslah berpegang teguh pada nilai-nilai yang telah kita tanamkan: Iman, Ilmu, dan Karakter. Jadilah terang di manapun kalian memijakkan kaki dan raihlah cita-cita setinggi langit demi kemuliaan-Nya."
+                            <blockquote class="font-serif text-xl md:text-2xl text-slate-800 italic mb-8 font-medium leading-relaxed relative z-10 pl-4 border-l-2 border-gold-400">
+Selamat atas kelulusan kalian! Biarlah integritas dan disiplin yang ditanamkan di SMAK IPEKA Balikpapan menjadi fondasi masa depanmu. Tetaplah saling menghargai, jadilah pembelajar seumur hidup, dan jadikan pelayanan sebagai gaya hidup agar senantiasa menjadi berkat bagi sesama.
+
+Mengingat firman Tuhan dalam Roma 12:11: "Janganlah hendaknya kerajinanmu kendor, biarlah rohmu menyala-nyala dan layanilah Tuhan."
+
+Selamat berjuang di lembaran baru, Angkatan ke-4! Tuhan Yesus memberkati.
                             </blockquote>
                         </div>
                         
                         <div data-aos="fade-up" data-aos-delay="600">
-                            <h4 class="font-serif font-bold text-maroon-900 text-xl">Ibu. Etti Hartiwi, M.Sc</h4>
-                            <p class="text-gold-600 font-medium italic">Kepala Sekolah SMA IPEKA Balikpapan</p>
+                            <h4 class="font-display font-bold text-maroon-900 text-xl">Ibu. Etti Hartiwi, M.Si</h4>
+                            <p class="text-gold-600 font-medium font-sans">Kepala Sekolah SMAK IPEKA Balikpapan</p>
                         </div>
                     </div>
                 </div>
@@ -214,41 +219,41 @@
                 <div class="flex flex-col lg:flex-row items-center gap-16">
                     <div class="w-full lg:w-1/2" data-aos="fade-right" data-aos-duration="1200">
                         <h4 class="text-gold-400 font-bold tracking-widest uppercase text-sm mb-2">Undangan Resmi</h4>
-                        <h2 class="font-serif text-4xl font-bold mb-6">Graduation & Farewell</h2>
+                        <h2 class="font-display text-4xl font-bold mb-6">Graduation & Farewell</h2>
                         <div class="w-16 h-px bg-gold-400 mb-8"></div>
-                        <p class="text-ivory-100 mb-10 text-lg font-serif italic leading-relaxed">Dengan penuh rasa syukur, kami mengundang seluruh siswa kelas XII yang telah dinyatakan lulus beserta orang tua/wali untuk hadir dalam acara peneguhan dan pelepasan angkatan 2026.</p>
+                        <p class="text-ivory mb-10 text-lg font-serif font-medium leading-relaxed">Dengan penuh rasa syukur, kami mengundang seluruh siswa kelas XII yang telah dinyatakan lulus beserta orang tua/wali untuk hadir dalam acara peneguhan dan pelepasan angkatan 2026.</p>
                         
                         <div class="space-y-8">
                             <div class="flex items-start gap-6 border-b border-ivory/10 pb-6 hover:pl-2 transition-all duration-300">
                                 <i class="fa-regular fa-calendar-days text-2xl text-gold-400 mt-1 w-8 text-center animate-pulse"></i>
                                 <div>
-                                    <h4 class="font-serif font-bold text-xl mb-1">Tanggal Pelaksanaan</h4>
-                                    <p class="text-ivory-100 font-light">Sabtu, 9 Mei 2026</p>
+                                    <h4 class="font-sans font-semibold text-xl mb-1">Tanggal Pelaksanaan</h4>
+                                    <p class="text-ivory font-serif font-medium text-lg">Sabtu, 9 Mei 2026</p>
                                 </div> 
                             </div>
                             <div class="flex items-start gap-6 border-b border-ivory/10 pb-6 hover:pl-2 transition-all duration-300">
                                 <i class="fa-regular fa-clock text-2xl text-gold-400 mt-1 w-8 text-center animate-pulse"></i>
                                 <div>
-                                    <h4 class="font-serif font-bold text-xl mb-1">Waktu Penyelenggaraan</h4>
-                                    <p class="text-ivory-100 font-light">08.00 WITA - Selesai</p>
+                                    <h4 class="font-sans font-semibold text-xl mb-1">Waktu Penyelenggaraan</h4>
+                                    <p class="text-ivory font-serif font-medium text-lg">08.00 WITA - Selesai</p>
                                 </div>
                             </div>
                             <div class="flex items-start gap-6 border-b border-ivory/10 pb-6 hover:pl-2 transition-all duration-300">
                                 <i class="fa-solid fa-location-dot text-2xl text-gold-400 mt-1 w-8 text-center animate-pulse"></i>
                                 <div>
-                                    <h4 class="font-serif font-bold text-xl mb-1">Tempat Acara</h4>
-                                    <p class="text-ivory-100 font-light">Aula SMA IPEKA BALIKPAPAN</p>
+                                    <h4 class="font-sans font-semibold text-xl mb-1">Tempat Acara</h4>
+                                    <p class="text-ivory font-serif font-medium text-lg">Aula SMAK IPEKA BALIKPAPAN</p>
                                 </div>
                             </div>
                             <div class="flex items-start gap-6 hover:pl-2 transition-all duration-300">
                                 <i class="fa-solid fa-shirt text-2xl text-gold-400 mt-1 w-8 text-center animate-pulse"></i>
                                 <div>
-                                    <h4 class="font-serif font-bold text-xl mb-3">Ketentuan Pakaian (Dress Code)</h4>
-                                    <div class="text-ivory-100 font-light leading-relaxed space-y-2">
-                                        <p><strong class="text-gold-300 font-medium">Siswa Pria:</strong> Kemeja berdasi dan celana panjang</p>
-                                        <p><strong class="text-gold-300 font-medium">Siswi Perempuan:</strong> Kebaya</p>
-                                        <p class="text-sm italic text-slate-300 border-l-2 border-gold-500 pl-3">*Seluruh siswa diwajibkan memakai sepatu yang menyesuaikan DRESSCODE.</p>
-                                        <p class="pt-2"><strong class="text-gold-300 font-medium">Orang Tua / Wali:</strong> Batik Formal / Jas dan Gaun Rapi</p>
+                                    <h4 class="font-sans font-semibold text-xl mb-3">Ketentuan Pakaian (Dress Code)</h4>
+                                    <div class="text-ivory font-serif font-medium text-lg leading-relaxed space-y-2">
+                                        <p><strong class="text-gold-300 font-sans font-semibold">Siswa Pria:</strong> Kemeja berdasi dan celana panjang</p>
+                                        <p><strong class="text-gold-300 font-sans font-semibold">Siswi Perempuan:</strong> Kebaya</p>
+                                        <p class="text-sm font-sans font-medium text-gold-300 border-l-2 border-gold-500 pl-3">*Seluruh siswa diwajibkan memakai sepatu yang menyesuaikan DRESSCODE.</p>
+                                        <p class="pt-2"><strong class="text-gold-300 font-sans font-semibold">Orang Tua / Wali:</strong> Batik Formal / Jas dan Gaun Rapi</p>
                                     </div>
                                 </div>
                             </div>
@@ -273,13 +278,13 @@
                     <div class="w-12 h-12 flex items-center justify-center shrink-0 rounded-sm p-1">
                         <img src="https://i.postimg.cc/tCdJhBSH/Logo-IPEKA-Christian-School-White.png" alt="Logo SMA IPEKA" class="w-full h-full object-contain" onerror="this.src='https://via.placeholder.com/150/6f0a14/d4af37?text=Logo'">
                     </div>
-                    <h1 class="font-serif font-bold text-white text-xl tracking-widest uppercase">SMA IPEKA</h1>
+                    <h1 class="font-display font-bold text-white text-xl tracking-widest uppercase">SMAK IPEKA</h1>
                 </div>
-                <p class="text-sm leading-relaxed font-serif italic text-white">Menyelenggarakan pendidikan Kristen yang utuh untuk mempersiapkan pemimpin masa depan yang beriman, berilmu, dan berkarakter mulia.</p>
+                <p class="text-base leading-relaxed font-serif font-medium text-white">Menyelenggarakan pendidikan Kristen yang utuh untuk mempersiapkan pemimpin masa depan yang beriman, berilmu, dan berkarakter mulia.</p>
             </div>
             <div>
-                <h4 class="font-serif text-gold-400 font-bold mb-6 text-lg tracking-widest uppercase">Kontak Institusi</h4>
-                <ul class="text-sm space-y-4 text-white">
+                <h4 class="font-sans text-gold-400 font-bold mb-6 text-lg tracking-widest uppercase">Kontak Institusi</h4>
+                <ul class="text-base space-y-4 font-sans font-medium text-white">
                     <li class="flex items-start gap-3 hover:text-gray-200 transition-colors cursor-default">
                         <div class="w-5 flex justify-center mt-1 flex-shrink-0">
                             <i class="fa-solid fa-map-pin text-gold-600"></i>
@@ -301,15 +306,15 @@
                 </ul>
             </div>
             <div>
-                <h4 class="font-serif text-gold-400 font-bold mb-6 text-lg tracking-widest uppercase">Media Sosial</h4>
+                <h4 class="font-sans text-gold-400 font-bold mb-6 text-lg tracking-widest uppercase">Media Sosial</h4>
                 <div class="flex gap-4">
                     <a href="https://www.instagram.com/ipekabalikpapan.official/" class="w-12 h-12 border border-white/30 flex items-center justify-center hover:bg-gold-500 hover:text-maroon-900 hover:border-gold-500 text-white hover:-translate-y-1 shadow-lg transition-all duration-300"><i class="fa-brands fa-instagram text-xl"></i></a>
                     <a href="https://www.youtube.com/@sekolahipekabalikpapan8202" class="w-12 h-12 border border-white/30 flex items-center justify-center hover:bg-gold-500 hover:text-maroon-900 hover:border-gold-500 text-white hover:-translate-y-1 shadow-lg transition-all duration-300"><i class="fa-brands fa-youtube text-xl"></i></a>
                 </div>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 pt-8 border-t border-white/20 text-sm text-center text-white font-serif">
-            <p>&copy; 2026 SMA IPEKA Balikpapan. Hak Cipta Dilindungi Undang-Undang.</p>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 pt-8 border-t border-white/20 text-sm font-medium text-center text-white font-sans">
+            <p>&copy; 2026 SMAK IPEKA Balikpapan. Hak Cipta Dilindungi Undang-Undang.</p>
         </div>
     </footer>
 
@@ -327,38 +332,38 @@
                     <div class="absolute bottom-2 right-2 w-4 h-4 border-b-2 border-r-2 border-gold-400"></div>
 
                     <div class="mb-6">
-                        <h5 class="text-maroon-900 font-bold tracking-[0.2em] uppercase text-xs md:text-sm mb-2">SMA IPEKA Balikpapan</h5>
+                        <h5 class="text-maroon-900 font-bold font-sans tracking-[0.2em] uppercase text-xs md:text-sm mb-2">SMAK IPEKA Balikpapan</h5>
                         <div class="w-16 h-px bg-gold-400 mx-auto mb-4 md:mb-6"></div>
-                        <h3 class="font-serif text-xl md:text-2xl text-slate-600 mb-1">Surat Keterangan</h3>
-                        <h2 class="font-serif text-2xl md:text-3xl font-bold text-maroon-900 uppercase tracking-widest">Keputusan Kelulusan</h2>
+                        <h3 class="font-serif text-xl md:text-2xl text-slate-600 italic font-medium mb-1">Surat Keterangan</h3>
+                        <h2 class="font-display text-2xl md:text-3xl font-bold text-maroon-900 uppercase tracking-widest">Keputusan Kelulusan</h2>
                     </div>
 
                     <div class="mb-6 md:mb-8">
-                        <p class="text-xs md:text-sm text-slate-500 mb-1 md:mb-2 uppercase tracking-widest">Diberikan Kepada:</p>
-                        <h4 id="modalName" class="font-serif text-2xl md:text-3xl font-bold text-maroon-900 mb-1 md:mb-2 leading-tight">Nama Lengkap Siswa</h4>
-                        <p class="text-sm md:text-md text-slate-600 font-serif italic mb-6">NIS / NISN: <span id="modalNisn">000000</span></p>
+                        <p class="text-xs md:text-sm font-semibold text-slate-500 mb-1 md:mb-2 uppercase tracking-widest">Diberikan Kepada:</p>
+                        <h4 id="modalName" class="font-display text-2xl md:text-3xl font-bold text-maroon-900 mb-1 md:mb-2 leading-tight">Nama Lengkap Siswa</h4>
+                        <p class="text-base md:text-lg font-sans font-semibold text-slate-700 mb-6">NIS / NISN: <span id="modalNisn">000000</span></p>
                         
-                        <p class="text-sm md:text-base text-slate-600 mb-4 leading-relaxed">Berdasarkan hasil rapat Dewan Guru beserta kriteria kelulusan yang telah ditetapkan, maka siswa tersebut di atas dinyatakan:</p>
+                        <p class="text-base md:text-lg font-serif font-medium text-slate-800 mb-4 leading-relaxed">Berdasarkan hasil rapat Dewan Guru beserta kriteria kelulusan yang telah ditetapkan, maka siswa tersebut di atas dinyatakan:</p>
                         
                         <div id="statusBox" class="py-3 md:py-4 px-6 md:px-8 border-2 border-maroon-900 inline-block mb-4 md:mb-6 bg-ivory animate-pulse">
-                            <h2 id="modalStatus" class="font-serif text-3xl md:text-4xl font-bold tracking-widest uppercase">LULUS</h2>
+                            <h2 id="modalStatus" class="font-display text-3xl md:text-4xl font-bold tracking-widest uppercase">LULUS</h2>
                         </div>
 
-                        <p id="modalMessage" class="text-sm md:text-base text-slate-700 italic font-serif px-2 md:px-6"></p>
+                        <p id="modalMessage" class="text-base md:text-lg text-maroon-900 italic font-medium font-serif px-2 md:px-6 leading-relaxed"></p>
                     </div>
 
                     <div class="flex justify-end mb-6 md:mb-8 pr-2 md:pr-8">
                         <div class="text-center">
-                            <p class="text-xs md:text-sm text-slate-600 mb-8 md:mb-10">Kepala Sekolah,</p>
-                            <p class="text-sm md:text-base font-serif font-bold text-maroon-900 border-b border-maroon-900 pb-1">Ibu. Etti Hartiwi, M.Sc</p>
+                            <p class="text-sm md:text-base font-medium font-sans text-slate-600 mb-8 md:mb-10">Kepala Sekolah,</p>
+                            <p class="text-sm md:text-base font-display font-bold text-maroon-900 border-b border-maroon-900 pb-1">Ibu. Etti Hartiwi, M.Sc</p>
                         </div>
                     </div>
 
                     <div class="flex flex-col md:flex-row justify-center gap-3 md:gap-4 items-center">
-                        <button onclick="closeModal()" class="w-full md:w-auto bg-transparent hover:bg-gold-50 text-maroon-900 font-bold py-3 px-6 md:px-8 transition-all duration-300 border border-gold-400 uppercase tracking-widest text-xs hover:shadow-md">
+                        <button onclick="closeModal()" class="w-full md:w-auto bg-transparent hover:bg-gold-50 text-maroon-900 font-bold font-sans py-3 px-6 md:px-8 transition-all duration-300 border border-gold-400 uppercase tracking-wider text-sm hover:shadow-md">
                             Tutup Dokumen
                         </button>
-                        <button id="btnLanjutInfo" onclick="lanjutKeHalamanSiswa()" class="w-full md:w-auto hidden bg-gold-400 hover:bg-gold-500 text-maroon-900 font-bold py-3 px-6 md:px-8 shadow-lg transition-all duration-300 transform hover:-translate-y-1 uppercase tracking-widest text-xs border border-gold-500">
+                        <button id="btnLanjutInfo" onclick="lanjutKeHalamanSiswa()" class="w-full md:w-auto hidden bg-gold-400 hover:bg-gold-500 text-maroon-900 font-bold font-sans py-3 px-6 md:px-8 shadow-lg transition-all duration-300 transform hover:-translate-y-1 uppercase tracking-wider text-sm border border-gold-500">
                             Lanjut ke Info Acara <i class="fa-solid fa-arrow-right ml-2 animate-bounce-x"></i>
                         </button>
                     </div>
@@ -406,7 +411,7 @@
             btnSubmit.classList.remove('opacity-50', 'cursor-not-allowed');
             document.getElementById('btnTextCek').innerText = "Periksa Hasil Kelulusan";
         }).catch((error) => {
-            console.error("Gagal terhubung ke Firebase Auth:", error);
+            console.error(error);
             document.getElementById('btnTextCek').innerText = "Koneksi Bermasalah";
             document.getElementById('searchIdInput').placeholder = "Terjadi Kesalahan Jaringan";
         });
@@ -468,7 +473,7 @@
 
                     if (isLulus) {
                         mStatusBox.className = "py-3 md:py-4 px-6 md:px-10 border-4 border-double border-green-800 inline-block mb-4 md:mb-6 bg-green-50 animate-pulse";
-                        mStatus.className = "font-serif text-3xl md:text-4xl font-bold tracking-widest uppercase text-green-900";
+                        mStatus.className = "font-display text-3xl md:text-4xl font-bold tracking-widest uppercase text-green-900";
                         mStatus.innerText = "LULUS";
                         btnLanjut.classList.remove('hidden'); 
                         
@@ -476,7 +481,7 @@
                         setTimeout(() => window.fireConfetti(), 500);
                     } else {
                         mStatusBox.className = "py-3 md:py-4 px-6 md:px-10 border-4 border-double border-red-800 inline-block mb-4 md:mb-6 bg-red-50";
-                        mStatus.className = "font-serif text-3xl md:text-4xl font-bold tracking-widest uppercase text-red-900";
+                        mStatus.className = "font-display text-3xl md:text-4xl font-bold tracking-widest uppercase text-red-900";
                         mStatus.innerText = siswa.status.toUpperCase();
                         btnLanjut.classList.add('hidden'); 
                         
@@ -488,7 +493,7 @@
                 }
 
             } catch (error) {
-                console.error("Gagal saat melakukan pencarian:", error);
+                console.error(error);
                 errorMsg.innerHTML = '<i class="fa-solid fa-circle-exclamation mr-1"></i> Gagal menghubungi database. Coba lagi.';
                 errorMsg.classList.remove('hidden');
             }
