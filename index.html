@@ -64,14 +64,6 @@
         .animate-float {
             animation: float 4s ease-in-out infinite;
         }
-        
-        @keyframes pulse-glow {
-            0%, 100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.4); }
-            50% { box-shadow: 0 0 0 15px rgba(212, 175, 55, 0); }
-        }
-        .animate-pulse-glow {
-            animation: pulse-glow 2s infinite;
-        }
     </style>
 </head>
 <body class="text-slate-800 font-sans antialiased">
@@ -127,8 +119,8 @@
                 </p>
 
                 <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-                    <a href="#cek-kelulusan" class="inline-flex items-center gap-3 bg-gold-400 hover:bg-gold-500 text-maroon-900 font-bold py-4 px-10 shadow-lg transition-all duration-300 transform hover:-translate-y-1 uppercase tracking-wider text-sm border border-gold-500 animate-pulse-glow">
-                        Cek Status Kelulusan <i class="fa-solid fa-arrow-down animate-bounce mt-1"></i>
+                    <a href="#cek-kelulusan" class="inline-flex items-center gap-3 bg-gold-400 hover:bg-gold-500 text-maroon-900 font-bold py-4 px-10 shadow-lg transition-all duration-300 transform hover:-translate-y-1 uppercase tracking-wider text-sm border border-gold-500">
+                        Cek Status Kelulusan <i class="fa-solid fa-arrow-down mt-1"></i>
                     </a>
                 </div>
             </div>
@@ -148,7 +140,7 @@
 
                         <h2 class="font-display text-3xl md:text-4xl font-bold text-maroon-900 mb-4" data-aos="fade-up" data-aos-delay="300">Pencarian Status Kelulusan</h2>
                         <div class="w-12 h-px bg-gold-400 mx-auto mb-6" data-aos="fade-in" data-aos-delay="400"></div>
-                        <p class="text-slate-800 text-base md:text-lg font-serif font-medium mb-10 leading-relaxed" data-aos="fade-up" data-aos-delay="400">Silakan masukkan <b>Nomor Induk Siswa (NIS)</b> atau <b>NISN</b> Anda ke dalam kolom yang tersedia di bawah ini untuk melihat hasil keputusan kelulusan.</p>
+                        <p class="text-slate-800 text-base md:text-lg font-serif font-medium mb-10 leading-relaxed" data-aos="fade-up" data-aos-delay="400">Silakan masukkan <b>NISN</b> Anda ke dalam kolom yang tersedia di bawah ini untuk melihat hasil keputusan kelulusan.</p>
 
                         <form id="formCek" class="max-w-md mx-auto" onsubmit="event.preventDefault(); cekKelulusan();" data-aos="fade-up" data-aos-delay="500">
                             <div class="mb-4 relative group">
@@ -156,8 +148,8 @@
                                 <div class="absolute bottom-0 left-0 w-0 h-0.5 bg-gold-500 transition-all duration-500 group-focus-within:w-full"></div>
                             </div>
                             
-                            <div id="errorMsg" class="hidden mb-6 text-red-600 text-sm font-sans font-medium px-4 py-2 bg-red-50 border border-red-200 rounded animate-pulse">
-                                <i class="fa-solid fa-circle-exclamation mr-1"></i> Data tidak ditemukan. Pastikan NIS/NISN sudah benar.
+                            <div id="errorMsg" class="hidden mb-6 text-red-600 text-sm font-sans font-medium px-4 py-2 bg-red-50 border border-red-200 rounded">
+                                <i class="fa-solid fa-circle-exclamation mr-1"></i> Data tidak ditemukan. Pastikan NISN sudah benar.
                             </div>
 
                             <button type="submit" id="btnSubmitCek" class="w-full bg-maroon-900 hover:bg-maroon-800 text-gold-400 font-bold py-4 px-6 shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1 uppercase tracking-wider text-sm border border-maroon-900 overflow-hidden relative group opacity-50 cursor-not-allowed" disabled>
@@ -165,7 +157,7 @@
                                 <div class="absolute inset-0 bg-gold-600/20 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out"></div>
                             </button>
                             
-                            <p class="text-sm text-center text-slate-600 mt-6 font-serif italic">*Pastikan NIS atau NISN dimasukkan dengan benar tanpa spasi.</p>
+                            <p class="text-sm text-center text-slate-600 mt-6 font-serif italic">*Pastikan NISN dimasukkan dengan benar tanpa spasi.</p>
                         </form>
 
                     </div>
@@ -183,7 +175,7 @@
                             <div class="absolute -bottom-4 -right-4 w-24 h-24 border-b-2 border-r-2 border-gold-400 -z-10 transition-transform duration-500 group-hover:translate-x-2 group-hover:translate-y-2"></div>
                             
                             <div class="overflow-hidden">
-                                <img src="https://i.postimg.cc/gJsQFSW0/Etti-Hartiwi-(Kepala-Sekolah)-(2000-x-2000-px).png" alt="Kepala Sekolah" class="w-full object-cover h-[500px] grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700">
+                                <img src="https://i.postimg.cc/YCtzKdjt/Etti-Hartiwi-(Kepala-Sekolah)-(2000-x-2000-px).png" alt="Kepala Sekolah" class="w-full object-cover h-[500px] grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700">
                             </div>
                         </div>
                     </div>
@@ -225,28 +217,28 @@ Selamat berjuang di lembaran baru, Angkatan ke-4! Tuhan Yesus memberkati.
                         
                         <div class="space-y-8">
                             <div class="flex items-start gap-6 border-b border-ivory/10 pb-6 hover:pl-2 transition-all duration-300">
-                                <i class="fa-regular fa-calendar-days text-2xl text-gold-400 mt-1 w-8 text-center animate-pulse"></i>
+                                <i class="fa-regular fa-calendar-days text-2xl text-gold-400 mt-1 w-8 text-center"></i>
                                 <div>
                                     <h4 class="font-sans font-semibold text-xl mb-1">Tanggal Pelaksanaan</h4>
                                     <p class="text-ivory font-serif font-medium text-lg">Sabtu, 9 Mei 2026</p>
                                 </div> 
                             </div>
                             <div class="flex items-start gap-6 border-b border-ivory/10 pb-6 hover:pl-2 transition-all duration-300">
-                                <i class="fa-regular fa-clock text-2xl text-gold-400 mt-1 w-8 text-center animate-pulse"></i>
+                                <i class="fa-regular fa-clock text-2xl text-gold-400 mt-1 w-8 text-center"></i>
                                 <div>
                                     <h4 class="font-sans font-semibold text-xl mb-1">Waktu Penyelenggaraan</h4>
                                     <p class="text-ivory font-serif font-medium text-lg">08.00 WITA - Selesai</p>
                                 </div>
                             </div>
                             <div class="flex items-start gap-6 border-b border-ivory/10 pb-6 hover:pl-2 transition-all duration-300">
-                                <i class="fa-solid fa-location-dot text-2xl text-gold-400 mt-1 w-8 text-center animate-pulse"></i>
+                                <i class="fa-solid fa-location-dot text-2xl text-gold-400 mt-1 w-8 text-center"></i>
                                 <div>
                                     <h4 class="font-sans font-semibold text-xl mb-1">Tempat Acara</h4>
                                     <p class="text-ivory font-serif font-medium text-lg">Aula SMAK IPEKA BALIKPAPAN</p>
                                 </div>
                             </div>
                             <div class="flex items-start gap-6 hover:pl-2 transition-all duration-300">
-                                <i class="fa-solid fa-shirt text-2xl text-gold-400 mt-1 w-8 text-center animate-pulse"></i>
+                                <i class="fa-solid fa-shirt text-2xl text-gold-400 mt-1 w-8 text-center"></i>
                                 <div>
                                     <h4 class="font-sans font-semibold text-xl mb-3">Ketentuan Pakaian (Dress Code)</h4>
                                     <div class="text-ivory font-serif font-medium text-lg leading-relaxed space-y-2">
@@ -341,11 +333,11 @@ Selamat berjuang di lembaran baru, Angkatan ke-4! Tuhan Yesus memberkati.
                     <div class="mb-6 md:mb-8">
                         <p class="text-xs md:text-sm font-semibold text-slate-500 mb-1 md:mb-2 uppercase tracking-widest">Diberikan Kepada:</p>
                         <h4 id="modalName" class="font-display text-2xl md:text-3xl font-bold text-maroon-900 mb-1 md:mb-2 leading-tight">Nama Lengkap Siswa</h4>
-                        <p class="text-base md:text-lg font-sans font-semibold text-slate-700 mb-6">NIS / NISN: <span id="modalNisn">000000</span></p>
+                        <p class="text-base md:text-lg font-sans font-semibold text-slate-700 mb-6">NISN: <span id="modalNisn">000000</span></p>
                         
                         <p class="text-base md:text-lg font-serif font-medium text-slate-800 mb-4 leading-relaxed">Berdasarkan hasil rapat Dewan Guru beserta kriteria kelulusan yang telah ditetapkan, maka siswa tersebut di atas dinyatakan:</p>
                         
-                        <div id="statusBox" class="py-3 md:py-4 px-6 md:px-8 border-2 border-maroon-900 inline-block mb-4 md:mb-6 bg-ivory animate-pulse">
+                        <div id="statusBox" class="py-3 md:py-4 px-6 md:px-8 border-2 border-maroon-900 inline-block mb-4 md:mb-6 bg-ivory">
                             <h2 id="modalStatus" class="font-display text-3xl md:text-4xl font-bold tracking-widest uppercase">LULUS</h2>
                         </div>
 
@@ -364,7 +356,7 @@ Selamat berjuang di lembaran baru, Angkatan ke-4! Tuhan Yesus memberkati.
                             Tutup Dokumen
                         </button>
                         <button id="btnLanjutInfo" onclick="lanjutKeHalamanSiswa()" class="w-full md:w-auto hidden bg-gold-400 hover:bg-gold-500 text-maroon-900 font-bold font-sans py-3 px-6 md:px-8 shadow-lg transition-all duration-300 transform hover:-translate-y-1 uppercase tracking-wider text-sm border border-gold-500">
-                            Lanjut ke Info Acara <i class="fa-solid fa-arrow-right ml-2 animate-bounce-x"></i>
+                            Lanjut ke Info Acara <i class="fa-solid fa-arrow-right ml-2"></i>
                         </button>
                     </div>
                 </div>
@@ -377,7 +369,7 @@ Selamat berjuang di lembaran baru, Angkatan ke-4! Tuhan Yesus memberkati.
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
         import { getAuth, signInAnonymously } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-auth.js";
-        import { getFirestore, collection, query, where, getDocs } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
+        import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
 
         const firebaseConfig = {
             apiKey: "AIzaSyAJneBX5dmxGMWCLSwOJ1mRZoY3G08dQtA",
@@ -404,7 +396,7 @@ Selamat berjuang di lembaran baru, Angkatan ke-4! Tuhan Yesus memberkati.
             const inputField = document.getElementById('searchIdInput');
             const btnSubmit = document.getElementById('btnSubmitCek');
             
-            inputField.placeholder = "Masukkan NIS atau NISN Anda";
+            inputField.placeholder = "Masukkan NISN Anda";
             inputField.disabled = false;
             
             btnSubmit.disabled = false;
@@ -437,42 +429,30 @@ Selamat berjuang di lembaran baru, Angkatan ke-4! Tuhan Yesus memberkati.
             errorMsg.classList.add('hidden'); 
 
             try {
-                const muridRef = collection(db, "datamurid");
-                let querySnapshot;
+                const docRef = doc(db, "datamurid", inputIdSiswa);
+                const docSnap = await getDoc(docRef);
 
-                querySnapshot = await getDocs(query(muridRef, where("nisn", "==", inputIdSiswa)));
-                
-                if (querySnapshot.empty) {
-                    querySnapshot = await getDocs(query(muridRef, where("nis", "==", inputIdSiswa)));
-                }
+                if (docSnap.exists()) {
+                    const siswa = docSnap.data();
 
-                if (querySnapshot.empty && !isNaN(inputIdSiswa)) {
-                    const numInput = Number(inputIdSiswa);
-                    querySnapshot = await getDocs(query(muridRef, where("nisn", "==", numInput)));
+                    const nomorDitampilkan = siswa.nisn || inputIdSiswa;
                     
-                    if (querySnapshot.empty) {
-                        querySnapshot = await getDocs(query(muridRef, where("nis", "==", numInput)));
-                    }
-                }
-
-                if (!querySnapshot.empty) {
-                    const docInfo = querySnapshot.docs[0];
-                    const siswa = docInfo.data();
-
-                    const nomorDitampilkan = siswa.nisn || siswa.nis || inputIdSiswa;
-                    
-                    mName.innerText = siswa.nama;
+                    mName.innerText = siswa.nama || "Nama Tidak Tersedia";
                     mNisn.innerText = nomorDitampilkan;
 
-                    const isLulus = (siswa.status.toUpperCase() === "LULUS");
+                    const statusSiswa = siswa.status ? siswa.status.toUpperCase() : "TIDAK DIKETAHUI";
+                    const isLulus = (statusSiswa === "LULUS");
+                    
                     let pesanTampil = "Mohon segera menghubungi pihak sekolah atau Bagian Tata Usaha (TU) untuk informasi lebih lanjut mengenai status administrasi Anda.";
                     if (isLulus) {
                         pesanTampil = "Selamat! Segala jerih payahmu selama 3 tahun membuahkan hasil. Teruslah andalkan Tuhan dalam setiap langkah hidupmu.";
                     }
+                    if(siswa.pesan) pesanTampil = siswa.pesan;
+
                     mMessage.innerText = `"${pesanTampil}"`;
 
                     if (isLulus) {
-                        mStatusBox.className = "py-3 md:py-4 px-6 md:px-10 border-4 border-double border-green-800 inline-block mb-4 md:mb-6 bg-green-50 animate-pulse";
+                        mStatusBox.className = "py-3 md:py-4 px-6 md:px-10 border-4 border-double border-green-800 inline-block mb-4 md:mb-6 bg-green-50";
                         mStatus.className = "font-display text-3xl md:text-4xl font-bold tracking-widest uppercase text-green-900";
                         mStatus.innerText = "LULUS";
                         btnLanjut.classList.remove('hidden'); 
@@ -482,19 +462,19 @@ Selamat berjuang di lembaran baru, Angkatan ke-4! Tuhan Yesus memberkati.
                     } else {
                         mStatusBox.className = "py-3 md:py-4 px-6 md:px-10 border-4 border-double border-red-800 inline-block mb-4 md:mb-6 bg-red-50";
                         mStatus.className = "font-display text-3xl md:text-4xl font-bold tracking-widest uppercase text-red-900";
-                        mStatus.innerText = siswa.status.toUpperCase();
+                        mStatus.innerText = statusSiswa;
                         btnLanjut.classList.add('hidden'); 
                         
                         window.showModal();
                     }
                 } else {
-                    errorMsg.innerHTML = '<i class="fa-solid fa-circle-exclamation mr-1"></i> Data tidak ditemukan. Pastikan NIS/NISN sudah benar.';
+                    errorMsg.innerHTML = '<i class="fa-solid fa-circle-exclamation mr-1"></i> Data tidak ditemukan. Pastikan NISN sudah benar.';
                     errorMsg.classList.remove('hidden');
                 }
 
             } catch (error) {
                 console.error(error);
-                errorMsg.innerHTML = '<i class="fa-solid fa-circle-exclamation mr-1"></i> Gagal menghubungi database. Coba lagi.';
+                errorMsg.innerHTML = '<i class="fa-solid fa-circle-exclamation mr-1"></i> Gagal menghubungi database. Atau NISN ditolak sistem.';
                 errorMsg.classList.remove('hidden');
             }
 
